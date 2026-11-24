@@ -37,3 +37,19 @@ npm install
 npm run dev      # desenvolvimento
 npm run build    # gera a pasta dist/
 ```
+
+## Deploy
+
+Todo push na `main` publica automaticamente no GitHub Pages (`.github/workflows/deploy.yml`).
+Em **Settings → Pages**, a fonte deve estar como **GitHub Actions**.
+
+Para usar domínio próprio, coloque um arquivo `public/CNAME` com o domínio (ex.: `disc.meusite.com`)
+e configure o DNS conforme a seção "Domínio próprio" abaixo.
+
+### Domínio próprio
+
+- **Subdomínio** (`disc.meusite.com`): registro `CNAME` apontando para `joojdev.github.io`
+- **Domínio raiz** (`meusite.com`): registros `A` para `185.199.108.153`, `185.199.109.153`,
+  `185.199.110.153`, `185.199.111.153` (e opcionalmente `www` como `CNAME` para `joojdev.github.io`)
+
+Depois, em **Settings → Pages → Custom domain**, informe o domínio e marque **Enforce HTTPS**.
