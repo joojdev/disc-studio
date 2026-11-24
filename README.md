@@ -43,8 +43,8 @@ npm run build    # gera a pasta dist/
 Todo push na `main` publica automaticamente no GitHub Pages (`.github/workflows/deploy.yml`).
 Em **Settings → Pages**, a fonte deve estar como **GitHub Actions**.
 
-Para usar domínio próprio, coloque um arquivo `public/CNAME` com o domínio (ex.: `disc.meusite.com`)
-e configure o DNS conforme a seção "Domínio próprio" abaixo.
+Para usar domínio próprio, configure o DNS conforme a seção "Domínio próprio" abaixo
+(com deploy via Actions não é preciso arquivo `CNAME` no repositório).
 
 ### Domínio próprio
 
